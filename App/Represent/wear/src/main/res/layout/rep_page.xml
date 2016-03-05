@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/relative_layout">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo"
+        android:src="@drawable/lee"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/baseboard"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lee_name"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:id="@+id/name"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/baseboard" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/representative"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:id="@+id/title"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentStart="false"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/democrat"
+            android:id="@+id/party"
+            android:textColor="@color/dark_blue"
+            android:layout_toEndOf="@+id/title"
+            android:layout_marginLeft="2dp"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

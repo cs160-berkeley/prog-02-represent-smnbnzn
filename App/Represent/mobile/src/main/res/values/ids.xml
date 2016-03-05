@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="committee3" type="id" />
+    <item name="committee4" type="id" />
+    <item name="bill3" type="id" />
+    <item name="bill3_details" type="id" />
+</resources>

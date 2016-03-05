@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/congressional_view_title"
+            android:text="@string/congressional_view_title"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/congressional_location"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_below="@+id/congressional_view_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/congressional_location"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lee_layout">
+
+            <ImageView
+                android:id="@+id/lee_photo"
+                android:src="@drawable/lee"
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/lee_tweet"
+                android:src="@drawable/lee_tweet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@+id/lee_photo"
+                android:layout_alignParentTop="false" />
+
+            <TextView
+                android:id="@+id/lee_title"
+                android:text="@string/representatitve"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:layout_toEndOf="@+id/lee_photo"
+                android:layout_alignParentEnd="false"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/lee_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/democrat_lee"
+                android:text="@string/democrat"
+                android:textSize="20sp"
+                android:layout_toEndOf="@+id/lee_title"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0011ff"
+                android:layout_below="@+id/lee_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lee_name"
+                android:id="@+id/lee_name"
+                android:layout_toEndOf="@+id/lee_photo"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:layout_alignTop="@+id/lee_photo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:id="@+id/lee_email"
+                android:layout_below="@+id/lee_title"
+                android:layout_alignStart="@+id/lee_title"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:clickable="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/website"
+                android:id="@+id/lee_website"
+                android:layout_below="@+id/lee_email"
+                android:layout_alignStart="@+id/lee_email"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:clickable="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_info"
+                android:id="@+id/lee_info"
+                android:layout_below="@+id/lee_website"
+                android:layout_alignStart="@+id/lee_website"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/feinstein_layout"
+            android:layout_below="@+id/lee_layout">
+
+            <ImageView
+                android:id="@+id/feinstein_photo"
+                android:src="@drawable/feinstein"
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/feinstein_tweet"
+                android:src="@drawable/feinstein_tweet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@+id/feinstein_photo"
+                android:layout_alignParentTop="false" />
+
+            <TextView
+                android:id="@+id/feinstein_title"
+                android:text="@string/senator"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:layout_alignParentEnd="false"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/feinstein_name"
+                android:layout_alignStart="@+id/feinstein_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/democrat_feinstein"
+                android:text="@string/democrat"
+                android:textSize="20sp"
+                android:layout_toEndOf="@+id/feinstein_title"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0011ff"
+                android:layout_below="@+id/feinstein_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feinstein_name"
+                android:id="@+id/feinstein_name"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:layout_toEndOf="@+id/feinstein_photo"
+                android:layout_alignTop="@+id/feinstein_photo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:id="@+id/feinstein_email"
+                android:layout_below="@+id/feinstein_title"
+                android:layout_alignStart="@+id/feinstein_title"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:clickable="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/website"
+                android:id="@+id/feinstein_website"
+                android:layout_below="@+id/feinstein_email"
+                android:layout_alignStart="@+id/feinstein_email"
+                android:textSize="22sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_info"
+                android:id="@+id/feinstein_info"
+                android:layout_below="@+id/feinstein_website"
+                android:layout_alignStart="@+id/feinstein_website"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:clickable="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/boxer_layout"
+            android:layout_below="@+id/feinstein_layout">
+
+            <ImageView
+                android:id="@+id/boxer_photo"
+                android:src="@drawable/boxer"
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/boxer_tweet"
+                android:src="@drawable/boxer_tweet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@+id/boxer_photo"
+                android:layout_alignParentTop="false" />
+
+            <TextView
+                android:id="@+id/boxer_title"
+                android:text="@string/senator"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:layout_alignParentEnd="false"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/boxer_name"
+                android:layout_alignStart="@+id/boxer_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/democrat_boxer"
+                android:text="@string/democrat"
+                android:textSize="20sp"
+                android:layout_toEndOf="@+id/boxer_title"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0011ff"
+                android:layout_below="@+id/boxer_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/boxer_name"
+                android:id="@+id/boxer_name"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:layout_alignTop="@+id/boxer_photo"
+                android:layout_toEndOf="@+id/boxer_photo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:id="@+id/boxer_email"
+                android:layout_below="@+id/boxer_title"
+                android:layout_alignStart="@+id/boxer_title"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:layout_toEndOf="@+id/boxer_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/website"
+                android:id="@+id/boxer_website"
+                android:layout_below="@+id/boxer_email"
+                android:layout_alignStart="@+id/boxer_email"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:clickable="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_info"
+                android:id="@+id/boxer_info"
+                android:layout_below="@+id/boxer_website"
+                android:layout_alignStart="@+id/boxer_website"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:clickable="true" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

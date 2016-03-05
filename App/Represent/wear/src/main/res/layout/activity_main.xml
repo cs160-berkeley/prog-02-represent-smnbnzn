@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.simonbonzon.represent.MainActivity"
+    tools:deviceIds="wear_round">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/represent_logo"
+        android:src="@drawable/represent_logo"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/represent_logo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_text"
+        android:layout_alignBottom="@+id/represent_logo"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text=""/>
+
+</RelativeLayout>
+

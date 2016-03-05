@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Represent</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="represent_logo" />
+    <string name="lee_name">Barbara Lee</string>
+    <string name="representative">Representative</string>
+    <string name="democrat">(D)</string>
+    <string name="vote_title">2012 US\nPresidential Vote</string>
+    <string name="lee_district">CA, Dist. 13</string>
+    <string name="obama">Obama:</string>
+    <string name="romney">Romney:</string>
+    <string name="obama_percent_d13">87.5%</string>
+    <string name="romney_percent_d13">9.0%</string>
+</resources>

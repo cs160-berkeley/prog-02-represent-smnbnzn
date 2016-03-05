@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.simonbonzon.represent.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:id="@+id/represent_logo"
+        android:src="@drawable/represent_logo"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/represent_logo" />
+
+    <EditText
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/zip_code"
+        android:hint="@string/zip_code"
+        android:textColorHint="#ff0000"
+        android:textAlignment="center"
+        android:layout_below="@+id/represent_logo"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:id="@+id/orText"
+        android:layout_below="@+id/zip_code"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/use_location"
+        android:id="@+id/useLocationButton"
+        android:layout_below="@+id/orText"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff0000"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="25sp"
+        android:clickable="true" />
+
+</RelativeLayout>
